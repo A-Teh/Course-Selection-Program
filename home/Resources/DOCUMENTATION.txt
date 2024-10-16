@@ -1,0 +1,46 @@
+//data structure or algorithm
+    This program contains:
+        Flashsort   
+        RangeTree   
+        BloomFilter
+//microcosm and functionality
+    This project aims to solve a issue that is common across schools in the US. Guidance cousilers not being able to support all the students 
+    forced upon them. A large part of this issue is simply the density of students compared to guidance counselers. Our program will
+    free a lot of time for each of these guidance counsilers so instead of spending then entire session trying to pick classes and find 
+    classes that are low in attendence, guidance counselers can connect with students. They will simply be able to upload a CSV on thier
+    students with their classes and a CSV of classes with all their info. It will ouput reccomended classes for each student and classes that are 
+    low in capacity or classes that are full. This info should be useful in determining what classes to add sections for or classes to take sections
+    away from. 
+//program's usage instructions:
+    To utilize this program you must first download the .cpp and .h files int the programming folder located on the left side of the screen.
+    Next, ensure you hae a compiler that can comile .cpp files. (mingw g++ comiler is reccomended)
+    Next, you must have a classes CSV file containing the classes you want to include(format: Name,Session Number,Credits,Capacity,MWF/TTh,TimeStart,TimeEnd,Prereqs)
+    Next, you must have a student CSV file contsianing all the students you want to include (format: Name,Year,Credits,Classes Taken)
+    Compile the program and run it with the following arguments in the order specified: classes.csv,students.csv, (optional: output file name. ) //if no filename is imput expect output.csv
+    The data will be sorted from student with the most credits to the least along with the classes they should be taking.
+//program's dependencies
+    The libraries used include:  "student.h", "RangeTree.h", "Class.h", "BloomFilter.h", <set>, <iostream>, <fstream>, <sstream>, <vector>, <cmath>, <cstdlib>
+Version: mingw version 2013072200
+Purpose: 
+    "student.h", "RangeTree.h", "Class.h": proprietary classes used to house data 
+    <set>: used to 
+    <iostream>: used to output to terminal for error testing 
+    <fstream>: used to outputing to the ourput file
+    <sstream>: used in outputing to the ourput file
+    <vector>: used to store the imput data (students and classes)
+    <cmath>: used in bloomfilter implementation for hashing purposes
+    <cstdlib>: used to convert types into other types EX: string to int
+
+//Installation Instructions: Instructions on how to install or obtain each dependency. This may include package manager commands, download links, or other relevant information.
+    All dependacies are either found in a typical C++ compiler or they are downloaded from this repository
+//License: The license information for each dependency, including whether it is open-source, proprietary, or subject to specific usage terms.
+    "student.h", "RangeTree.h", "Class.h" are proprietary and can be downloaded in the programming folder in this repository
+    all other dependacies are open source
+//Compatibility Notes: Any additional notes or considerations regarding compatibility with different operating systems, platforms, or environments.
+    N/A
+//Links: Links to official documentation or resources for each dependency, where developers can find more detailed information or updates.
+    https://sourceforge.net/projects/mingw/ //c++ compiler that comes with all but the proprietary files (reccomended but any compiler should work)
+//program's installation instructions
+    The only requirement is a C++ compiler and then to download the .cpp and .h files in this repository.
+
+

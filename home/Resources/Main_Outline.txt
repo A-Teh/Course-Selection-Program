@@ -1,0 +1,43 @@
+-Main file and code for class selection algorithm
+
+-Make a set of the classes required for CSC
+
+-Make a range tree of the required classes and their prereqs
+
+-CSV Data Sheet: https://docs.google.com/spreadsheets/d/1jI8GPYNiYl3RG32Gg3XtiqZTRHWCT4nNX2sPyBZxOJA/edit?usp=sharing
+    -Select between tabs at bottom
+    -File>Download>Comma Separated Values(.csv)
+
+-Command Line Arguments: "ClassDataFile" "StudentDataFile" "OutputFileName"
+    -Directories to class data csv files and student data csv files
+    -Output directory of output csv file
+
+-Input data from CSV file containing data about classes being offered
+    -Data: Class name (CSC212), Session Number, Credits, Capacity, MWF/TTh, TimeStart, TimeEnd, Prereqs
+    -Times are converted to military and stored as ints
+    -Ex: 3:30 PM becomes 1530
+
+-Input from CSV file containing data about students to create a list of students
+    -Data: Name, Year, Credits, Classes taken
+
+-Sort the list of students using FlashSort based on year and Credits
+    -Seniors>Juniors>Sophomores>Freshmen
+        -Higher credits first
+
+-Make range tree of classes that the student has not taken
+    -Range tree organized from left to right based the level of the courses
+    -prereqs should be to the left of the course 
+
+-Assign classes based on need in the sorted order
+    -Requirements:
+        -No student can take classes that overlap
+        -Maximum credits a student can take is 19
+        -All students must have at least 12 credits
+
+-Print Errors
+    -Full classes (Need more sessions)
+    -Low enrollment classes (<30% full, too many sessions/poor scheduled time)
+    -Students with not enough credits enrolled (<12 credits)
+
+-Output to CSV file (.txt)
+    -Name, classes to take comma separated

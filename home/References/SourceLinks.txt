@@ -1,0 +1,19 @@
+Bloom Filter:
+
+https://www.geeksforgeeks.org/bloom-filters-introduction-and-python-implementation/
+https://www.spiceworks.com/tech/big-data/articles/what-is-a-bloom-filter/
+https://doris.apache.org/docs/1.2/data-table/index/bloomfilter/
+
+
+Flash Sort:
+https://steemit.com/popularscience/@krishtopa/the-fastest-sort-method-flashsort 
+https://www.educative.io/answers/what-is-flash-sort 
+
+
+Range Tree:
+https://www.geeksforgeeks.org/exploring-range-trees/ 
+
+
+Other:
+
+

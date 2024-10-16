@@ -1,0 +1,109 @@
+/*
+    Anytime you work on the code put down anything you did and why you did it. Even if it doesn't work it can help build our 25 page
+    paper. also put the date along with your name
+
+*/
+
+3/28:
+    Met up and discoussed topic that we could do. We thought of student class picker and immidiately latched onto it.
+        -all group members
+
+4/10:
+    distributed roles to members
+        -Kamden & Garret
+    created the layout in the main function
+    Brainstormed the expected imput and output of our program and provided examples to the group
+        -Garret
+    created Student and Class classes in order to hold the data we need in the most effiencent and simple way
+    Further specified what exactly we want the program to do
+        -Garret Kishan and Kamden
+    started implementation of Class class
+    finished class.cpp 
+    changed flashsort to be called once and recieve a vector of students and return a sorted vector based on senoirity and flashsorts their classes taken
+        -Kamden 
+    Created Datasets folder and CSV files of data input
+        -Garrett
+
+4/11:
+    Added text file to store sources used, created outline file under Resources folder
+        -Garrett
+    Created basic implementation of BloomFilter
+        -Garrett
+4/12:
+    Added nameWithoutChars function to the class object in order to strip the class of the letters to make sorting based on class level easier
+        -Kamden
+4/14:
+    updated student.h with setters and getters
+    added the static void flashsort function to sort the vector of students by credits/year
+    implemented the student.cpp file (all setters/getters, constructor, flashsort, and the enroll method that takes a class and adds it to the classes taking set if not in it and returns a bool based on that)
+    changed the enroll method to take in a already created obj Class instead of a string
+        -Kamden
+
+    Met up and Updated outlines and assigned report sections to each member.
+        -Kamden and Garrett
+    improved flashsort with more effiencent nummber of buckets and hopefully a better distrobution of data 
+    Started and did most of the README file leaving some sections for later 
+        -Kamden
+
+    Updated BloomFilter to support strings rather than integers
+    Updated ClassData.csv to have the full CSC curriculum with class sessions and times
+    Improvements to Class and Student classes
+        -Garrett
+
+4/15:
+    Ran into problems running ClassSelection.cpp when including student.h and class.h. Commented them out for testing.  Are these classes not done with testing?
+    Create InputFile function in ClassSelection.cpp: Reads in class data file and returns set of classes
+        Realized I only made a set of the names of the classes and had to redo it
+    Create concept of creating Range Tree, however can not be tested until the Range Tree class is created
+        -Andrew
+
+    Completed StudentData.csv file
+        List of 300 randomly generated students
+    Fixed issues with #include in some files
+    Added arg checker at start of main
+    Added Student::addClassPassed(Class) method
+        Adds a single class to the bloom filter of passed classes
+    Added Student::enroll(Class) method
+        Checks required criteria, returns false if unable to add class
+        UNTESTED - I didn't have time to fully test it yet
+        -Garrett
+
+4/16
+    Completed implementation of inputStudents and inputClasses, returns vector of classes and students
+    Ran into issues using function before realizing the file was accidently modified (empty lines were added)
+    Borrowed code from sets and maps lab
+    students and classes were orginally stored as sets, but had to be changed to vectors due to issues using the insert function on objects
+    Used Flashsort to sort students from lowest credits to highest
+
+
+    Updated Class and student classes to pass by reference so its methods no longer pass entire vectors and other large objects
+        -Garrett
+
+4/17
+    Fixed problem with adding classes taken to students; variable was not being cleared
+        -Andrew
+4/18
+    Added function to output students and their schedule to a csv
+    Could not figure out how to reference each classes PreReqs after innitalizing them, so I rehauled everything necessary by removing any pointer.
+        There was probably a different way of doing it but that was the only solution I could find.  Performance doesn't seem to decrease much
+    Added toString function for Class class to make testing easier
+    Modified student enroll function
+        -Stopped enrolling classes after 15 credit threshold is met - seemed more realistic than maxing out everyone's credits
+        -Compared to classes that student had passed
+            -Andrew
+4/19
+    Added Error codes
+        -Students like Jimmy Neutron don't get schedules because they have already taken every class
+        -
+
+4/20:
+    added Flashsort PDF to report sections  
+    almost done with the other report sections  
+        -Kamden
+
+4/22:
+    Changed output csv file to have a title line and removed "Credits Enrolled: " part of string for each entry
+        "Student Name, Credits Enrolled, Classes Enrolled"
+        -Garrett
+    
+    -Completed Project

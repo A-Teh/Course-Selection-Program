@@ -1,0 +1,23 @@
+The research paper should be the culmination of your research. The length is inconsequential as long as it is qualitative. It should include the:
+
+    data structure or algorithm - Kam, Garrett, Kishan
+
+    microcosm (Main and ClassSelection.cpp) - Andrew
+
+    program's implementation - Garrett
+
+    program's usage - Garrett
+
+    program's future- Kamden
+
+    program's limitations - Andrew
+
+    program's strengths - Kishan
+
+    program's weaknesses - Andrew
+
+    program's use cases - Kamden 
+
+
+https://docs.google.com/document/d/1DxKpmrtPUckmBbRNE9AOV4eMLPx6ryuwYTX8w5xodoA/edit?usp=sharing
+This is the doc for project. Above is the structure we are supposed to follow
